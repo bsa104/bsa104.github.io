@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<!--Making website responsive, and enabling bootstrap-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" 
+href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel='icon' href='favicon.ico' type='image/x-icon/'>
+<!--Setting CSS rules for images-->
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<title>Gallery | Troop 104</title>
+  </head>
+  <body>
+  <!--Dropdown navigation menu-->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Menu
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="index.html">Home</a>
+        <a class="dropdown-item" href="news.html">News</a>
+        <a class="dropdown-item" href="about.html">About Us</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+<br>
+    <div class="container">
+      <div class="responsive">
+	  <!--Images in the gallery-->
+  <div class="gallery">
+    <a target="_blank" href="37156169_2633224123569805_4059633642576543744_o.jpg">
+      <img src="37156169_2633224123569805_4059633642576543744_o.jpg" alt="CCB Scouts" width="600" height="400">
+    </a>
+    <div class="desc">Troop 104 at Cole Canoe Base</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="60215868_2325990617463132_3284053967297839104_n.png">
+      <img src="60215868_2325990617463132_3284053967297839104_n.png" alt="104's Eagle Scouts" width="600" height="400">
+    </a>
+    <div class="desc">All the Eagle Scouts of Troop 104 with adult leaders.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="42831060_2716586955233521_288605120638222336_n.jpg">
+      <img src="42831060_2716586955233521_288605120638222336_n.jpg" alt="Flag Retirement" width="600" height="400">
+    </a>
+    <div class="desc">Troop 104 performing a flag retirement.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="48969081_2786866274872255_3407565544419753984_n.jpg">
+      <img src="48969081_2786866274872255_3407565544419753984_n.jpg" alt="Troop 104 playing Gaga Ball" width="600" height="400">
+    </a>
+    <div class="desc">Troop 104 playing Gaga Ball at a recruitment activity night.</div>
+  </div>
+</div>
+  </body>
+</html>
